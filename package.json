@@ -1,0 +1,15 @@
+{
+  "name": "stroeerwerbung",
+  "version": "1.0.0",
+  "description": "Stroeer Werbung kampagne",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch assets/scss:assets/css",
+    "scss-prod": "sass  --no-source-map --style=expanded assets/scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

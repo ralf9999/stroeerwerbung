@@ -1,0 +1,135 @@
+.bgLight{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    background: #E9EDF8;
+    animation: bgLightSlid 4.2s ease-in 2.6s both;
+    -webkit-animation: bgLightSlid 4.2s ease-in 2.6s both;
+}
+.gastFreundAds {
+    position: relative;
+    top: 55%;
+    left: 40%;
+    margin: auto;
+    width: 80%;
+    transform:translate(-50%, -50%) ;
+    -webkit-transform:translate(-50%, -50%) ;
+    -moz-transform:translate(-50%, -50%) ;
+    -ms-transform:translate(-50%, -50%) ;
+    -o-transform:translate(-50%, -50%) ;
+}
+.gastFreundAds img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    animation: gastFreundeKey 4.7s both ;
+    -webkit-animation: gastFreundeKey 4.7s both ;
+}
+
+img.fighterBox{
+    position: absolute;
+    bottom: -80%;
+    left: 0;
+    width: 102%;
+    animation: fighterRight 5s ease-in 1.8s both;
+    -webkit-animation: fighterRight 5s ease-in 1.8s both;
+}
+/*Jobs Kampagne Box*/
+.jobskampagneBox{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100% 100%;
+    grid-area: auto;
+    justify-content: flex-end;
+    align-items: end;
+    animation: shopJobsSlid 12s ease-in 5.5s both;
+    -webkit-animation: shopJobsSlid 12s ease-in 5.5s both;
+}
+
+/*###########Job Angebot###################*/
+.jobDesign{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: 
+    "title"
+    "image01"
+    "descript";
+}
+.titleBox{
+    display: flex;
+    justify-content: center;
+  grid-area: title;
+}
+.image{
+  grid-area: image01;
+}
+.descriptBox {
+    position: relative;
+    grid-area: descript;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .infoBox {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    a.infoButton {
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 220px;
+        cursor: pointer;
+    }
+}
+.shopJob a .infoButton{
+    animation: shopJobsSlidButton 300ms ease-in 7s both;
+    -webkit-animation: shopJobsSlidButton 300ms ease-in 7s both;
+}
+/*############################
+###########ende##############*/
+
+/*gastro Job Artkel*/
+.gastroJob a .infoButton{
+    animation: shopJobsSlidButton02 300ms ease-in 11.8s both;
+    -webkit-animation: shopJobsSlidButton02 300ms ease-in 11.8s both;
+}
+/*############################
+###########ende##############*/
+/*service Job Artkel*/
+
+.serviceJob a .infoButton{
+    animation: shopJobsSlidButton03 300ms ease-in 18s both;
+    -webkit-animation: shopJobsSlidButton03 300ms ease-in 18s both;
+}
+/*############################
+###########ende##############*/
+/*##---------end--------##*/
+.jobDesign .titleBox .beiunsBox{
+    display: none;
+}
+.jobDesign .titleBox .beiunsBoxSmall{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: auto;
+}
+.jobDesign .image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+}
