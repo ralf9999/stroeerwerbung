@@ -38,9 +38,17 @@
 }
 }
 @media screen and (min-width:768px) {
+    .bgLight{
+        animation: bgLightSlid 4.2s ease-in 2.8s both;
+        -webkit-animation: bgLightSlid 4.2s ease-in 2.8s both;
+}
     .descriptBox{
         margin: 20px 0 0 0;
       }
+      .jobskampagneBox{
+        top: -180px;
+    
+    }
 }
 @media (orientation: landscape) and (min-width:480px){
     /*Backgrounds--*/
