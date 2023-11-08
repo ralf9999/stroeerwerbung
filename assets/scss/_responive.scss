@@ -2,21 +2,105 @@
     .descriptBox{
         margin: -80px 0 0 0;
       }
+      /*shop Job Artkel*/
+.shopJob .descriptBox a .infoButton{
+    animation: shopJobsSlidButton01 600ms ease-in 8s both;
+    -webkit-animation: shopJobsSlidButton01 600ms ease-in 8s both;
+}
+/*#######################0#####
+###########ende##############*/
+
+/*gastro Job Artkel*/
+.gastroJob .descriptBox a .infoButton{
+    animation: shopJobsSlidButton02 600ms ease-in 13s both;
+    -webkit-animation: shopJobsSlidButton02 600ms ease-in 13s both;
+}
+/*############################
+###########ende##############*/
+/*service Job Artkel*/
+
+.serviceJob .descriptBox a .infoButton{
+    animation: shopJobsSlidButton03 600ms ease-in 18s both;
+    -webkit-animation: shopJobsSlidButton03 600ms ease-in 18s both;
+}
+/*############################
+###########ende##############*/
+}
+@media screen and (min-height:600px) {
+    /*Backgrounds--*/
+    .bgLight{
+        animation: bgLightSlid 4.2s ease-in 2.9s both;
+        -webkit-animation: bgLightSlid 4.2s ease-in 2.9s both;
+}
+    img.fighterBox{
+        animation: fighterRight-600 4.5s ease-in 2.4s both;
+        -webkit-animation: fighterRight-600 4.5s ease-in 2.4s both;
+}
 }
 @media screen and (min-width:768px) {
     .descriptBox{
         margin: 20px 0 0 0;
       }
 }
+@media (orientation: landscape) and (min-width:480px){
+    /*Backgrounds--*/
+    .bgLight{
+    animation: bgLightSlid-h 2.5s ease-in 4s both;
+    -webkit-animation: bgLightSlid-h 2.5s ease-in 4s both;
+}
+.headerBox img {
+    display: block;
+    height: 30px;
+    padding: 10px 0;
+}
+img.fighterBox{
+    top: -15%;
+    left: 0;
+    bottom: 0;
+    width: none;
+    height: 150%;
+    animation: fighterRight-h 4.5s ease-in 2.4s both;
+    -webkit-animation: fighterRight-h 4.5s ease-in 2.4s both;
+}
+.jobskampagneBox{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+
+}
+.jobDesign {
+    margin: -10px 0 0 0 ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "image01 title"
+    "image01 descript"
+    ;
+    .image{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100vh;
+        object-fit: cover;
+        margin-top: 0;
+    }
+}
+}
 @media (orientation: landscape) and (min-width:567px){
     /*Backgrounds--*/
     .bgLight{
-    animation: bgLightSlid 2.4s ease-in 4s both;
-    -webkit-animation: bgLightSlid 2.4s ease-in 4s both;
+    animation: bgLightSlid-h 2.5s ease-in 4s both;
+    -webkit-animation: bgLightSlid-h 2.5s ease-in 4s both;
 }
 img.fighterBox{
-    animation: fighterRight 7s ease-in 2.4s both;
-    -webkit-animation: fighterRight 7s ease-in 2.4s both;
+    top: -15%;
+    left: 0;
+    bottom: 0;
+    width: none;
+    height: 150%;
+    animation: fighterRight-h 4.5s ease-in 2.4s both;
+    -webkit-animation: fighterRight-h 4.5s ease-in 2.4s both;
 }
 .headerBox img {
     display: block;
@@ -27,6 +111,13 @@ img.fighterBox{
     top: 55%;
     left: 30%;
     width: 60%;
+}
+.jobskampagneBox{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+
 }
 .jobDesign {
     grid-template-columns: 50% 50%;
@@ -53,9 +144,9 @@ img.fighterBox{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;
-        margin-top: -10%;
+        margin-top: 0;
     }
     .descriptBox {
         position: relative;
@@ -79,27 +170,77 @@ img.fighterBox{
         }
     }
 }
+.shopJob{
+    animation: shopJob-el-H 5s linear 7s both;
+    -webkit-animation: shopJob-el-H 5s linear 7s both;
+}
+.gastroJob{
+    animation: gastroJob-el-H 5s linear 12s both;
+    -webkit-animation: gastroJob-el-H 5s linear 12s both;
+}
+.serviceJob{
+    animation: serviceJob-el-H 5s linear 18s both;
+    -webkit-animation: serviceJob-el-H 5s linear 18s both;
+}
+/*shop Job Artkel*/
+.shopJob .descriptBox a .infoButton{
+    animation: shopJobsSlidButton01 600ms ease-in 8s both;
+    -webkit-animation: shopJobsSlidButton01 600ms ease-in 8s both;
+}
+/*#######################0#####
+###########ende##############*/
+
+/*gastro Job Artkel*/
+.gastroJob .descriptBox a .infoButton{
+    animation: shopJobsSlidButton02 600ms ease-in 13s both;
+    -webkit-animation: shopJobsSlidButton02 600ms ease-in 13s both;
+}
+/*############################
+###########ende##############*/
+/*service Job Artkel*/
+
+.serviceJob .descriptBox a .infoButton{
+    animation: shopJobsSlidButton03 600ms ease-in 18s both;
+    -webkit-animation: shopJobsSlidButton03 600ms ease-in 18s both;
+}
+/*############################
+###########ende##############*/
+/*##---------end--------##*/
 }
 @media (orientation: landscape) and (min-width:1022px) {
     /*Background*/
     .bgLight{
-    animation: bgLightSlid 3.2s ease-in 3.2s both;
-    -webkit-animation: bgLightSlid 3.2s ease-in 3.2s both;
+    animation: bgLightSlid-h 3.2s ease-in 3.2s both;
+    -webkit-animation: bgLightSlid-h 3.2s ease-in 3.2s both;
 }
 img.fighterBox{
-    animation: fighterRight 7s ease-in 1.8s both;
-    -webkit-animation: fighterRight 7s ease-in 1.8s both;
+    top: -24%;
+    height:160%;
+    animation: fighterRight-h 4s ease-in 2.8s both;
+    -webkit-animation: fighterRight-h 4s ease-in 2.8s both;
 }
-  .headerBox img {
+.headerBox img {
     display: block;
     height: 65px;
     padding: 10px 0;
-}.gastFreundAds {
+}
+.gastFreundAds {
     top: 55%;
     left: 32%;
     width: 60%;
 }
-
+.shopJob{
+    animation: shopJob-el-H 5s linear 7s both;
+    -webkit-animation: shopJob-el-H 5s linear 7s both;
+}
+.gastroJob{
+    animation: gastroJob-el-H 5s linear 12s both;
+    -webkit-animation: gastroJob-el-H 5s linear 12s both;
+}
+.serviceJob{
+    animation: serviceJob-el-H 5s linear 18s both;
+    -webkit-animation: serviceJob-el-H 5s linear 18s both;
+}
 .jobDesign {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -130,5 +271,4 @@ img.fighterBox{
         margin-top: 30%;
     }
 }
-
 }

@@ -42,8 +42,8 @@ body {
   width: 100%;
   height: 100dvh;
   background: #E9EDF8;
-  animation: bgLightSlid 4.2s ease-in 2.6s both;
-  -webkit-animation: bgLightSlid 4.2s ease-in 2.6s both;
+  animation: bgLightSlid 4.2s ease-in 2.7s both;
+  -webkit-animation: bgLightSlid 4.2s ease-in 2.7s both;
 }
 
 .gastFreundAds {
@@ -78,28 +78,30 @@ img.fighterBox {
 
 /*Jobs Kampagne Box*/
 .jobskampagneBox {
-  position: absolute;
-  top: 80px;
+  position: relative;
+  top: -50px;
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100% 100% 100%;
-  grid-area: auto;
-  justify-content: flex-end;
-  align-items: end;
-  animation: shopJobsSlid 12s ease-in 5.5s both;
-  -webkit-animation: shopJobsSlid 12s ease-in 5.5s both;
+  overflow: hidden;
 }
 
 /*###########Job Angebot###################*/
 .jobDesign {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 20% 40% 40%;
   grid-template-areas: "title" "image01" "descript";
+  transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
 }
 
 .titleBox {
@@ -122,34 +124,53 @@ img.fighterBox {
 }
 .descriptBox .infoBox {
   width: 80%;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
 }
-.descriptBox a.infoButton {
+.descriptBox a {
+  width: 100%;
+}
+.descriptBox a .infoButton {
   display: block;
   margin: 20px auto 0 auto;
-  width: 220px;
+  width: 56%;
   cursor: pointer;
 }
 
-.shopJob a .infoButton {
-  animation: shopJobsSlidButton 300ms ease-in 7s both;
-  -webkit-animation: shopJobsSlidButton 300ms ease-in 7s both;
+.shopJob {
+  animation: shopJob-el-V 5s linear 7s both;
+  -webkit-animation: shopJob-el-V 5s linear 7s both;
 }
 
-/*############################
+.gastroJob {
+  animation: gastroJob-el-V 5s linear 12s both;
+  -webkit-animation: gastroJob-el-V 5s linear 12s both;
+}
+
+.serviceJob {
+  animation: serviceJob-el-V 5s linear 17s both;
+  -webkit-animation: serviceJob-el-V 5s linear 17s both;
+}
+
+/*shop Job Artkel*/
+.shopJob .descriptBox a .infoButton {
+  animation: shopJobsSlidButton01 600ms ease-in 1.6s both;
+  -webkit-animation: shopJobsSlidButton01 600ms ease-in 1.6s both;
+}
+
+/*#######################0#####
 ###########ende##############*/
 /*gastro Job Artkel*/
-.gastroJob a .infoButton {
-  animation: shopJobsSlidButton02 300ms ease-in 11.8s both;
-  -webkit-animation: shopJobsSlidButton02 300ms ease-in 11.8s both;
+.gastroJob .descriptBox a .infoButton {
+  animation: shopJobsSlidButton02 600ms ease-in 7s both;
+  -webkit-animation: shopJobsSlidButton02 600ms ease-in 7s both;
 }
 
 /*############################
 ###########ende##############*/
 /*service Job Artkel*/
-.serviceJob a .infoButton {
-  animation: shopJobsSlidButton03 300ms ease-in 18s both;
-  -webkit-animation: shopJobsSlidButton03 300ms ease-in 18s both;
+.serviceJob .descriptBox a .infoButton {
+  animation: shopJobsSlidButton03 600ms ease-in 14s both;
+  -webkit-animation: shopJobsSlidButton03 600ms ease-in 14s both;
 }
 
 /*############################
@@ -251,6 +272,32 @@ img.fighterBox {
 }
 /*###############################################
 ----------------------ende---------------------*/
+/*##-------Background lightblue horizontal-----------##*/
+@keyframes bgLightSlid-h {
+  0% {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
+  52% {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(240%, 0, 0);
+    -webkit-transform: translate3d(240%, 0, 0);
+    -moz-transform: translate3d(240%, 0, 0);
+    -ms-transform: translate3d(240%, 0, 0);
+    -o-transform: translate3d(240%, 0, 0);
+  }
+}
+/*###############################################
+----------------------ende---------------------*/
 /*##--------------fighterBox------------##*/
 @keyframes fighterRight {
   0% {
@@ -266,6 +313,39 @@ img.fighterBox {
     -moz-transform: translate3d(0, -220%, 0);
     -ms-transform: translate3d(0, -220%, 0);
     -o-transform: translate3d(0, -220%, 0);
+  }
+}
+/*##--------------fighterBox------------##*/
+@keyframes fighterRight-600 {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, -230%, 0);
+    -webkit-transform: translate3d(0, -230%, 0);
+    -moz-transform: translate3d(0, -230%, 0);
+    -ms-transform: translate3d(0, -230%, 0);
+    -o-transform: translate3d(0, -230%, 0);
+  }
+}
+@keyframes fighterRight-h {
+  0% {
+    transform: rotate(90deg) translateY(130%);
+    -webkit-transform: rotate(90deg) translateY(130%);
+    -moz-transform: rotate(90deg) translateY(130%);
+    -ms-transform: rotate(90deg) translateY(130%);
+    -o-transform: rotate(90deg) translateY(130%);
+  }
+  100% {
+    transform: rotate(90deg) translateY(-110%);
+    -webkit-transform: rotate(90deg) translateY(-110%);
+    -moz-transform: rotate(90deg) translateY(-110%);
+    -ms-transform: rotate(90deg) translateY(-110%);
+    -o-transform: rotate(90deg) translateY(-110%);
   }
 }
 /* Shop Animation */
@@ -298,7 +378,14 @@ img.fighterBox {
     -ms-transform: translate3d(0, -100vh, 0);
     -o-transform: translate3d(0, -100vh, 0);
   }
-  86% {
+  76% {
+    transform: translate3d(0, -100vh, 0);
+    -webkit-transform: translate3d(0, -100vh, 0);
+    -moz-transform: translate3d(0, -100vh, 0);
+    -ms-transform: translate3d(0, -100vh, 0);
+    -o-transform: translate3d(0, -100vh, 0);
+  }
+  84% {
     transform: translate3d(0, -100vh, 0);
     -webkit-transform: translate3d(0, -100vh, 0);
     -moz-transform: translate3d(0, -100vh, 0);
@@ -306,11 +393,11 @@ img.fighterBox {
     -o-transform: translate3d(0, -100vh, 0);
   }
   96% {
-    transform: translate3d(0, -100vh, 0);
-    -webkit-transform: translate3d(0, -100vh, 0);
-    -moz-transform: translate3d(0, -100vh, 0);
-    -ms-transform: translate3d(0, -100vh, 0);
-    -o-transform: translate3d(0, -100vh, 0);
+    transform: translate3d(0, -200vh, 0);
+    -webkit-transform: translate3d(0, -200vh, 0);
+    -moz-transform: translate3d(0, -200vh, 0);
+    -ms-transform: translate3d(0, -200vh, 0);
+    -o-transform: translate3d(0, -200vh, 0);
   }
   100% {
     transform: translate3d(0, -200vh, 0);
@@ -320,7 +407,7 @@ img.fighterBox {
     -o-transform: translate3d(0, -200vh, 0);
   }
 }
-@keyframes shopJobsSlidButton {
+@keyframes shopJobsSlidButton01 {
   0% {
     transform: translate3d(0, 500px, 0);
     -webkit-transform: translate3d(0, 500px, 0);
@@ -369,9 +456,290 @@ img.fighterBox {
   }
 }
 /*###############end ####################*/
+/*##-----Animation Jobsangebote horizontal--##
+#########################################*/
+@keyframes shopJob-el-H {
+  0% {
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+  }
+  8% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  92% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+  }
+}
+@keyframes gastroJob-el-H {
+  0% {
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+  }
+  8% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  92% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+  }
+}
+@keyframes serviceJob-el-H {
+  0% {
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+  }
+  8% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  92% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+}
+/*##########----ende-----##########
+####################################*/
+/*##-----Animation Jobsangebote vertikal--##
+#########################################*/
+@keyframes shopJob-el-V {
+  0% {
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+  }
+  8% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  92% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+  }
+}
+@keyframes gastroJob-el-V {
+  0% {
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+  }
+  8% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  92% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+  }
+}
+@keyframes serviceJob-el-V {
+  0% {
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+  }
+  8% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  92% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+}
+/*##########----ende-----##########
+####################################*/
+@media (orientation: landscape) and (min-width: 1022px) {
+  /* Shop Animation */
+  @keyframes shopJobsSlid {
+    0% {
+      transform: translate3d(-100%, 0, 0);
+      -webkit-transform: translate3d(-100%, 0, 0);
+      -moz-transform: translate3d(-100%, 0, 0);
+      -ms-transform: translate3d(-100%, 0, 0);
+      -o-transform: translate3d(-100%, 0, 0);
+    }
+    8% {
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+    }
+    38% {
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+    }
+    46% {
+      transform: translate3d(200%, 0, 0);
+      -webkit-transform: translate3d(200%, 0, 0);
+      -moz-transform: translate3d(200%, 0, 0);
+      -ms-transform: translate3d(200%, 0, 0);
+      -o-transform: translate3d(200%, 0, 0);
+    }
+    76% {
+      transform: translate3d(100%, 0, 0);
+      -webkit-transform: translate3d(100%, 0, 0);
+      -moz-transform: translate3d(100%, 0, 0);
+      -ms-transform: translate3d(100%, 0, 0);
+      -o-transform: translate3d(100%, 0, 0);
+    }
+    84% {
+      transform: translate3d(100%, 0, 0);
+      -webkit-transform: translate3d(100%, 0, 0);
+      -moz-transform: translate3d(100%, 0, 0);
+      -ms-transform: translate3d(100%, 0, 0);
+      -o-transform: translate3d(100%, 0, 0);
+    }
+    96% {
+      transform: translate3d(200%, 0, 0);
+      -webkit-transform: translate3d(200%, 0, 0);
+      -moz-transform: translate3d(200%, 0, 0);
+      -ms-transform: translate3d(200%, 0, 0);
+      -o-transform: translate3d(200%, 0, 0);
+    }
+    100% {
+      transform: translate3d(200%, 0, 0);
+      -webkit-transform: translate3d(200%, 0, 0);
+      -moz-transform: translate3d(200%, 0, 0);
+      -ms-transform: translate3d(200%, 0, 0);
+      -o-transform: translate3d(200%, 0, 0);
+    }
+  }
+}
 @media screen and (min-width: 320px) {
   .descriptBox {
     margin: -80px 0 0 0;
+  }
+  /*shop Job Artkel*/
+  .shopJob .descriptBox a .infoButton {
+    animation: shopJobsSlidButton01 600ms ease-in 8s both;
+    -webkit-animation: shopJobsSlidButton01 600ms ease-in 8s both;
+  }
+  /*#######################0#####
+  ###########ende##############*/
+  /*gastro Job Artkel*/
+  .gastroJob .descriptBox a .infoButton {
+    animation: shopJobsSlidButton02 600ms ease-in 13s both;
+    -webkit-animation: shopJobsSlidButton02 600ms ease-in 13s both;
+  }
+  /*############################
+  ###########ende##############*/
+  /*service Job Artkel*/
+  .serviceJob .descriptBox a .infoButton {
+    animation: shopJobsSlidButton03 600ms ease-in 18s both;
+    -webkit-animation: shopJobsSlidButton03 600ms ease-in 18s both;
+  }
+  /*############################
+  ###########ende##############*/
+}
+@media screen and (min-height: 600px) {
+  /*Backgrounds--*/
+  .bgLight {
+    animation: bgLightSlid 4.2s ease-in 2.9s both;
+    -webkit-animation: bgLightSlid 4.2s ease-in 2.9s both;
+  }
+  img.fighterBox {
+    animation: fighterRight-600 4.5s ease-in 2.4s both;
+    -webkit-animation: fighterRight-600 4.5s ease-in 2.4s both;
   }
 }
 @media screen and (min-width: 768px) {
@@ -379,15 +747,61 @@ img.fighterBox {
     margin: 20px 0 0 0;
   }
 }
+@media (orientation: landscape) and (min-width: 480px) {
+  /*Backgrounds--*/
+  .bgLight {
+    animation: bgLightSlid-h 2.5s ease-in 4s both;
+    -webkit-animation: bgLightSlid-h 2.5s ease-in 4s both;
+  }
+  .headerBox img {
+    display: block;
+    height: 30px;
+    padding: 10px 0;
+  }
+  img.fighterBox {
+    top: -15%;
+    left: 0;
+    bottom: 0;
+    width: none;
+    height: 150%;
+    animation: fighterRight-h 4.5s ease-in 2.4s both;
+    -webkit-animation: fighterRight-h 4.5s ease-in 2.4s both;
+  }
+  .jobskampagneBox {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+  }
+  .jobDesign {
+    margin: -10px 0 0 0;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "image01 title" "image01 descript";
+  }
+  .jobDesign .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    object-fit: cover;
+    margin-top: 0;
+  }
+}
 @media (orientation: landscape) and (min-width: 567px) {
   /*Backgrounds--*/
   .bgLight {
-    animation: bgLightSlid 2.4s ease-in 4s both;
-    -webkit-animation: bgLightSlid 2.4s ease-in 4s both;
+    animation: bgLightSlid-h 2.5s ease-in 4s both;
+    -webkit-animation: bgLightSlid-h 2.5s ease-in 4s both;
   }
   img.fighterBox {
-    animation: fighterRight 7s ease-in 2.4s both;
-    -webkit-animation: fighterRight 7s ease-in 2.4s both;
+    top: -15%;
+    left: 0;
+    bottom: 0;
+    width: none;
+    height: 150%;
+    animation: fighterRight-h 4.5s ease-in 2.4s both;
+    -webkit-animation: fighterRight-h 4.5s ease-in 2.4s both;
   }
   .headerBox img {
     display: block;
@@ -398,6 +812,12 @@ img.fighterBox {
     top: 55%;
     left: 30%;
     width: 60%;
+  }
+  .jobskampagneBox {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
   }
   .jobDesign {
     grid-template-columns: 50% 50%;
@@ -420,9 +840,9 @@ img.fighterBox {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
-    margin-top: -10%;
+    margin-top: 0;
   }
   .jobDesign .descriptBox {
     position: relative;
@@ -443,16 +863,52 @@ img.fighterBox {
     width: 220px;
     cursor: pointer;
   }
+  .shopJob {
+    animation: shopJob-el-H 5s linear 7s both;
+    -webkit-animation: shopJob-el-H 5s linear 7s both;
+  }
+  .gastroJob {
+    animation: gastroJob-el-H 5s linear 12s both;
+    -webkit-animation: gastroJob-el-H 5s linear 12s both;
+  }
+  .serviceJob {
+    animation: serviceJob-el-H 5s linear 18s both;
+    -webkit-animation: serviceJob-el-H 5s linear 18s both;
+  }
+  /*shop Job Artkel*/
+  .shopJob .descriptBox a .infoButton {
+    animation: shopJobsSlidButton01 600ms ease-in 8s both;
+    -webkit-animation: shopJobsSlidButton01 600ms ease-in 8s both;
+  }
+  /*#######################0#####
+  ###########ende##############*/
+  /*gastro Job Artkel*/
+  .gastroJob .descriptBox a .infoButton {
+    animation: shopJobsSlidButton02 600ms ease-in 13s both;
+    -webkit-animation: shopJobsSlidButton02 600ms ease-in 13s both;
+  }
+  /*############################
+  ###########ende##############*/
+  /*service Job Artkel*/
+  .serviceJob .descriptBox a .infoButton {
+    animation: shopJobsSlidButton03 600ms ease-in 18s both;
+    -webkit-animation: shopJobsSlidButton03 600ms ease-in 18s both;
+  }
+  /*############################
+  ###########ende##############*/
+  /*##---------end--------##*/
 }
 @media (orientation: landscape) and (min-width: 1022px) {
   /*Background*/
   .bgLight {
-    animation: bgLightSlid 3.2s ease-in 3.2s both;
-    -webkit-animation: bgLightSlid 3.2s ease-in 3.2s both;
+    animation: bgLightSlid-h 3.2s ease-in 3.2s both;
+    -webkit-animation: bgLightSlid-h 3.2s ease-in 3.2s both;
   }
   img.fighterBox {
-    animation: fighterRight 7s ease-in 1.8s both;
-    -webkit-animation: fighterRight 7s ease-in 1.8s both;
+    top: -24%;
+    height: 160%;
+    animation: fighterRight-h 4s ease-in 2.8s both;
+    -webkit-animation: fighterRight-h 4s ease-in 2.8s both;
   }
   .headerBox img {
     display: block;
@@ -463,6 +919,18 @@ img.fighterBox {
     top: 55%;
     left: 32%;
     width: 60%;
+  }
+  .shopJob {
+    animation: shopJob-el-H 5s linear 7s both;
+    -webkit-animation: shopJob-el-H 5s linear 7s both;
+  }
+  .gastroJob {
+    animation: gastroJob-el-H 5s linear 12s both;
+    -webkit-animation: gastroJob-el-H 5s linear 12s both;
+  }
+  .serviceJob {
+    animation: serviceJob-el-H 5s linear 18s both;
+    -webkit-animation: serviceJob-el-H 5s linear 18s both;
   }
   .jobDesign {
     grid-template-columns: 50% 50%;

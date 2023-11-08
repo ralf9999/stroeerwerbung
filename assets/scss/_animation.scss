@@ -76,6 +76,34 @@
     }
 /*###############################################
 ----------------------ende---------------------*/
+  /*##-------Background lightblue horizontal-----------##*/
+  @keyframes bgLightSlid-h {
+    0% {
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+    }
+
+    52% {
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+}
+
+    100% {
+      transform: translate3d(240%, 0, 0);
+      -webkit-transform: translate3d(240%, 0, 0);
+      -moz-transform: translate3d(240%, 0, 0);
+      -ms-transform: translate3d(240%, 0, 0);
+      -o-transform: translate3d(240%, 0, 0);
+}
+  }
+/*###############################################
+----------------------ende---------------------*/
 
 /*##--------------fighterBox------------##*/
 @keyframes fighterRight {
@@ -93,6 +121,41 @@
       -moz-transform: translate3d(0,-220%,0);
       -ms-transform: translate3d(0,-220%,0);
       -o-transform: translate3d(0,-220%,0);
+}
+  }
+  /*##--------------fighterBox------------##*/
+@keyframes fighterRight-600 {
+  0% {
+    transform: translate3d(0, 100% ,0);
+    -webkit-transform: translate3d(0, 100% ,0);
+    -moz-transform: translate3d(0, 100% ,0);
+    -ms-transform: translate3d(0, 100% ,0);
+    -o-transform: translate3d(0, 100% ,0);
+}
+
+  100% {
+    transform: translate3d(0,-230%,0);
+    -webkit-transform: translate3d(0,-230%,0);
+    -moz-transform: translate3d(0,-230%,0);
+    -ms-transform: translate3d(0,-230%,0);
+    -o-transform: translate3d(0,-230%,0);
+}
+}
+  @keyframes fighterRight-h {
+    0% {
+      transform:rotate(90deg) translateY(130%);
+      -webkit-transform:rotate(90deg) translateY(130%);
+      -moz-transform:rotate(90deg) translateY(130%);
+      -ms-transform:rotate(90deg) translateY(130%);
+      -o-transform:rotate(90deg) translateY(130%);
+}
+
+    100% {
+      transform:rotate(90deg) translateY(-110%) ;
+      -webkit-transform:rotate(90deg) translateY(-110%) ;
+      -moz-transform:rotate(90deg) translateY(-110%) ;
+      -ms-transform:rotate(90deg) translateY(-110%) ;
+      -o-transform:rotate(90deg) translateY(-110%) ;
 }
   }
     /* Shop Animation */
@@ -129,7 +192,15 @@
           -o-transform: translate3d(0, -100vh, 0);
 }
 
-      86% {
+      76% {
+          transform: translate3d(0, -100vh, 0);
+          -webkit-transform: translate3d(0, -100vh, 0);
+          -moz-transform: translate3d(0, -100vh, 0);
+          -ms-transform: translate3d(0, -100vh, 0);
+          -o-transform: translate3d(0, -100vh, 0);
+}
+
+      84% {
           transform: translate3d(0, -100vh, 0);
           -webkit-transform: translate3d(0, -100vh, 0);
           -moz-transform: translate3d(0, -100vh, 0);
@@ -138,23 +209,22 @@
 }
 
       96% {
-          transform: translate3d(0, -100vh, 0);
-          -webkit-transform: translate3d(0, -100vh, 0);
-          -moz-transform: translate3d(0, -100vh, 0);
-          -ms-transform: translate3d(0, -100vh, 0);
-          -o-transform: translate3d(0, -100vh, 0);
-}
-
-      100% {
           transform: translate3d(0, -200vh, 0);
           -webkit-transform: translate3d(0, -200vh, 0);
           -moz-transform: translate3d(0, -200vh, 0);
           -ms-transform: translate3d(0, -200vh, 0);
           -o-transform: translate3d(0, -200vh, 0);
 }
+    100% {
+      transform: translate3d(0, -200vh, 0);
+      -webkit-transform: translate3d(0, -200vh, 0);
+      -moz-transform: translate3d(0, -200vh, 0);
+      -ms-transform: translate3d(0, -200vh, 0);
+      -o-transform: translate3d(0, -200vh, 0);
+    }
   }
 
-  @keyframes shopJobsSlidButton {
+  @keyframes shopJobsSlidButton01 {
       0% {
           transform: translate3d(0, 500px, 0);
           -webkit-transform: translate3d(0, 500px, 0);
@@ -208,3 +278,258 @@
 }
 }
   /*###############end ####################*/
+  /*##-----Animation Jobsangebote horizontal--##
+  #########################################*/
+    @keyframes shopJob-el-H {
+      0% {
+        transform: translate(-100%, 0);
+        -webkit-transform: translate(-100%, 0);
+        -moz-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+        -o-transform: translate(-100%, 0);
+      }
+      8% {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+      } 
+      92% {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+      } 
+      100% {
+        transform: translate(100%, 0);
+        -webkit-transform: translate(100%, 0);
+        -moz-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        -o-transform: translate(100%, 0);
+} 
+  }
+  @keyframes gastroJob-el-H {
+    0% {
+      transform: translate(-100%, 0);
+      -webkit-transform: translate(-100%, 0);
+      -moz-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+      -o-transform: translate(-100%, 0);
+    }
+    8% {
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+    } 
+    92% {
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+    } 
+    100% {
+      transform: translate(100%, 0);
+      -webkit-transform: translate(100%, 0);
+      -moz-transform: translate(100%, 0);
+      -ms-transform: translate(100%, 0);
+      -o-transform: translate(100%, 0);
+}   
+}
+@keyframes serviceJob-el-H {
+  0% {
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+  }
+  8% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  } 
+  92% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  } 
+  100% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }   
+}
+  /*##########----ende-----##########
+####################################*/ 
+  /*##-----Animation Jobsangebote vertikal--##
+  #########################################*/
+  @keyframes shopJob-el-V {
+    0% {
+      transform: translate(0, 100%);
+      -webkit-transform: translate(0, 100%);
+      -moz-transform: translate(0, 100%);
+      -ms-transform: translate(0, 100%);
+      -o-transform: translate(0, 100%);
+}
+    8% {
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+    } 
+    92% {
+      transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+    } 
+    100% {
+      transform: translate(0, -100%);
+      -webkit-transform: translate(0, -100%);
+      -moz-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+      -o-transform: translate(0, -100%);
+} 
+}
+@keyframes gastroJob-el-V {
+  0% {
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+}
+  8% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  } 
+  92% {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  } 
+  100% {
+    transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+}   
+}
+@keyframes serviceJob-el-V {
+0% {
+  transform: translate(0, 100%);
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+}
+8% {
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+} 
+92% {
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+} 
+100% {
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+}   
+}
+/*##########----ende-----##########
+####################################*/ 
+  @media (orientation: landscape) and (min-width:1022px) {
+  /* Shop Animation */
+  @keyframes shopJobsSlid {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -moz-transform: translate3d(-100%, 0, 0);
+        -ms-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+}
+
+    8% {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+}
+
+    38% {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+}
+
+    46% {
+        transform: translate3d(200%, 0, 0);
+        -webkit-transform: translate3d(200%, 0, 0);
+        -moz-transform: translate3d(200%, 0, 0);
+        -ms-transform: translate3d(200%, 0, 0);
+        -o-transform: translate3d(200%, 0, 0);
+}
+
+    76% {
+        transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+}
+
+    84% {
+        transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+}
+
+    96% {
+        transform: translate3d(200%, 0, 0);
+        -webkit-transform: translate3d(200%, 0, 0);
+        -moz-transform: translate3d(200%, 0, 0);
+        -ms-transform: translate3d(200%, 0, 0);
+        -o-transform: translate3d(200%, 0, 0);
+}
+    100% {
+      transform: translate3d(200%, 0, 0);
+      -webkit-transform: translate3d(200%, 0, 0);
+      -moz-transform: translate3d(200%, 0, 0);
+      -ms-transform: translate3d(200%, 0, 0);
+      -o-transform: translate3d(200%, 0, 0);
+}
+}
+  }
