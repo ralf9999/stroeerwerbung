@@ -98,8 +98,8 @@ img.fighterBox{
 @media (orientation: landscape) and (min-width:567px){
     /*Backgrounds--*/
     .bgLight{
-    animation: bgLightSlid-h 2.5s ease-in 4s both;
-    -webkit-animation: bgLightSlid-h 2.5s ease-in 4s both;
+    animation: bgLightSlid-h 4.4s ease-in 2.2s both;
+    -webkit-animation: bgLightSlid-h 4.4s ease-in 2.2s both;
 }
 img.fighterBox{
     top: -15%;
@@ -107,8 +107,8 @@ img.fighterBox{
     bottom: 0;
     width: none;
     height: 150%;
-    animation: fighterRight-h 4.5s ease-in 2.4s both;
-    -webkit-animation: fighterRight-h 4.5s ease-in 2.4s both;
+    animation: fighterRight-h 4.5s ease-in 2.2s both;
+    -webkit-animation: fighterRight-h 4.5s ease-in 2.2s both;
 }
 .headerBox img {
     display: block;

@@ -289,11 +289,11 @@ img.fighterBox {
     -o-transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(240%, 0, 0);
-    -webkit-transform: translate3d(240%, 0, 0);
-    -moz-transform: translate3d(240%, 0, 0);
-    -ms-transform: translate3d(240%, 0, 0);
-    -o-transform: translate3d(240%, 0, 0);
+    transform: translate3d(300%, 0, 0);
+    -webkit-transform: translate3d(300%, 0, 0);
+    -moz-transform: translate3d(300%, 0, 0);
+    -ms-transform: translate3d(300%, 0, 0);
+    -o-transform: translate3d(300%, 0, 0);
   }
 }
 /*###############################################
@@ -325,11 +325,11 @@ img.fighterBox {
     -o-transform: translate3d(0, 100%, 0);
   }
   100% {
-    transform: translate3d(0, -230%, 0);
-    -webkit-transform: translate3d(0, -230%, 0);
-    -moz-transform: translate3d(0, -230%, 0);
-    -ms-transform: translate3d(0, -230%, 0);
-    -o-transform: translate3d(0, -230%, 0);
+    transform: translate3d(0, -330%, 0);
+    -webkit-transform: translate3d(0, -330%, 0);
+    -moz-transform: translate3d(0, -330%, 0);
+    -ms-transform: translate3d(0, -330%, 0);
+    -o-transform: translate3d(0, -330%, 0);
   }
 }
 @keyframes fighterRight-h {
@@ -341,11 +341,11 @@ img.fighterBox {
     -o-transform: rotate(90deg) translateY(130%);
   }
   100% {
-    transform: rotate(90deg) translateY(-110%);
-    -webkit-transform: rotate(90deg) translateY(-110%);
-    -moz-transform: rotate(90deg) translateY(-110%);
-    -ms-transform: rotate(90deg) translateY(-110%);
-    -o-transform: rotate(90deg) translateY(-110%);
+    transform: rotate(90deg) translateY(-160%);
+    -webkit-transform: rotate(90deg) translateY(-160%);
+    -moz-transform: rotate(90deg) translateY(-160%);
+    -ms-transform: rotate(90deg) translateY(-160%);
+    -o-transform: rotate(90deg) translateY(-160%);
   }
 }
 /* Shop Animation */
@@ -798,8 +798,8 @@ img.fighterBox {
 @media (orientation: landscape) and (min-width: 567px) {
   /*Backgrounds--*/
   .bgLight {
-    animation: bgLightSlid-h 2.5s ease-in 4s both;
-    -webkit-animation: bgLightSlid-h 2.5s ease-in 4s both;
+    animation: bgLightSlid-h 4.4s ease-in 2.2s both;
+    -webkit-animation: bgLightSlid-h 4.4s ease-in 2.2s both;
   }
   img.fighterBox {
     top: -15%;
@@ -807,8 +807,8 @@ img.fighterBox {
     bottom: 0;
     width: none;
     height: 150%;
-    animation: fighterRight-h 4.5s ease-in 2.4s both;
-    -webkit-animation: fighterRight-h 4.5s ease-in 2.4s both;
+    animation: fighterRight-h 4.5s ease-in 2.2s both;
+    -webkit-animation: fighterRight-h 4.5s ease-in 2.2s both;
   }
   .headerBox img {
     display: block;
